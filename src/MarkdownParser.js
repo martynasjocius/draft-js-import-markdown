@@ -679,8 +679,8 @@ Renderer.prototype.image = function(href, title, alt) {
   if (alt) {
     attributes.push(['alt', alt]);
   }
-  var imageNode = new _syntheticDom.ElementNode('img', attributes, _syntheticDom.SELF_CLOSING);
-  return new _syntheticDom.ElementNode('figure', [], [imageNode]);
+  var imageNode = new ElementNode('img', attributes, SELF_CLOSING);
+  return new ElementNode('figure', [], [imageNode]);
 };
 
 Renderer.prototype.text = function(childNode) {
